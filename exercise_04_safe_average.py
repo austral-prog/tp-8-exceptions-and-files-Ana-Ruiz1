@@ -28,7 +28,7 @@ def safe_average(filename):
         # archivo contiene: "10\n20\nno_es_un_numero\n30\n"
         safe_average("numeros.txt") -> 20.0
     """
-        try:
+    try:
         with open(filename, 'r') as archivo:
             contenido = archivo.read()
             lista_numeros = contenido.split()
