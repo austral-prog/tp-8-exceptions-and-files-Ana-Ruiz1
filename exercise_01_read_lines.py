@@ -25,9 +25,13 @@ def read_lines(filename):
         # archivo contiene: "manzana\n  banana\npera\n"
         read_lines("datos.txt") -> ["manzana", "banana", "pera"]
     """
-   lista = []
-   with open(filename, 'r') as archivo:
-       for linea in archivo:
+   def read_lines(filename):
+    """
+    Lee un archivo de texto y retorna una lista con sus líneas.
+    """
+    lista = []
+    with open(filename, 'r') as archivo:
+        for linea in archivo:
             linea_limpia = linea.strip()
             if linea_limpia:
                 lista.append(linea_limpia)
