@@ -26,8 +26,8 @@ def read_lines(filename):
         read_lines("datos.txt") -> ["manzana", "banana", "pera"]
     """
    lista = []
-    with open(filename, 'r') as archivo:
-        for linea in archivo:
+   with open(filename, 'r') as archivo:
+       for linea in archivo:
             linea_limpia = linea.strip()
             if linea_limpia:
                 lista.append(linea_limpia)
